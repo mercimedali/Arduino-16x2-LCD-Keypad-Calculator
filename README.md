@@ -47,16 +47,16 @@ Next Operation: Press any key to return to mode selection.
 
 Key Mappings
 Key	Function
-1	Addition (+)
-2	Subtraction (-)
-3	Multiplication (*)
-4	Division (/)
-5	Modulus (%)
-A	Decimal point
-B	Backspace
-C	Toggle negative
-*	Cancel / reset
-#	Enter / confirm
+'1'	Addition (+)
+'2'	Subtraction (-)
+'3'	Multiplication (*)
+'4'	Division (/)
+'5'	Modulus (%)
+'A'	Decimal point
+'B'	Backspace
+'C'	Toggle negative
+'*'	Cancel / reset
+'#'	Enter / confirm
 Example Usage
 
 Select an operation (e.g., 1 for addition).
@@ -95,6 +95,7 @@ Welcome screen
 
 
 Code Snippet
+
 void handleNumberInput(String &number, char key) {
   if (key >= '0' && key <= '9' && number.length() < 16) number += key;
   else if (key=='A' && number.indexOf('.')==-1 && number.length()<15) number = (number.length()==0)?"0.":number+".";
